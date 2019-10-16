@@ -3,7 +3,7 @@
 * [Setup](setup/setup.md)
 * [Quick_Mode](quick_mode/quickmode_pytorch.md)
 * [Dataset_Formats](dataset_format/image_classification.md)
-* [Update_Mode](update_mode/update_mode.md)
+* [Update_Mode](update_mode/update_dataset.md)
 * [Auxillary_Functions](aux_functions/aux_functions.md)
 * [Resume_Training](resume_training/resume_training.md)
 * [Copy_Experiment](copy_experiment/copy_experiment.md)
