@@ -1,4 +1,9 @@
 <!-- _coverpage.md -->
+<style>
+.featured-page .entry-title::before, .featured-page .entry-title::after {
+  content: none;
+}
+</style>
 
 # Monk <small>1.0</small>
 
