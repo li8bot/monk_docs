@@ -1,7 +1,5 @@
-<title>HOME</title>
 <!-- _coverpage.md -->
-<head>
-</head>
+
 # Monk <small>1.0</small>
 
 > Standardising Computer Vision workflows.
