@@ -22,14 +22,14 @@ ktf.Prototype("sample-project", "sample-experiment");
 - Update <b>dataset path</b> to the location of training images split into different folders
 
 ```python
-ktf.Default(dataset_path="./monk/dataset/train", model_name="resnet18", freeze_base_network=True, num_epochs=2)
+ktf.Default(dataset_path="./monk/dataset/train", model_name="inceptionv3", freeze_base_network=True, num_epochs=2)
 ```
 
 ### Select CNN Model
 - Update <b>model_name</b> from available list of architectures
 
 ```python
-ktf.Default(dataset_path="./monk/dataset/train", model_name="resnet18", freeze_base_network=True, num_epochs=2)
+ktf.Default(dataset_path="./monk/dataset/train", model_name="inceptionv3", freeze_base_network=True, num_epochs=2)
 ```
 ?> **Tip** To list available models run `ktf.List_Models()`
 
@@ -37,7 +37,7 @@ ktf.Default(dataset_path="./monk/dataset/train", model_name="resnet18", freeze_b
 - Update <b>num_epochs</b> to desired value.
 
 ```python
-ktf.Default(dataset_path="./monk/dataset/train", model_name="resnet18", freeze_base_network=True, num_epochs=2)
+ktf.Default(dataset_path="./monk/dataset/train", model_name="inceptionv3", freeze_base_network=True, num_epochs=2)
 ```
 
 ### Run training
