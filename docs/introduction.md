@@ -17,6 +17,10 @@ ptf<span style="color:#806030; ">.</span>Default<span style="color:#806030; ">(<
 ptf<span style="color:#806030; ">.</span>Train<span style="color:#806030; ">(</span><span style="color:#806030; ">)</span>
 </pre>
 
+## Inference
+
+
+
 ## Compare Experiments
 
 - Add created experiments with different hyperparameters
