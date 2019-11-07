@@ -1,10 +1,6 @@
+<title>HOME</title>
 <!-- _coverpage.md -->
 <head>
-<style>
-.featured-page .entry-title::before, .featured-page .entry-title::after {
-  content: none;
-}
-</style>
 </head>
 # Monk <small>1.0</small>
 
