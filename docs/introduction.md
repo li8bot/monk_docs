@@ -9,16 +9,21 @@
 - Set number of epochs
 - Run training
 
-
-<pre style="color:#000000;background:#f1f0f0;">ptf <span style="color:#806030; ">=</span> prototype<span style="color:#806030; ">(</span>verbose<span style="color:#806030; ">=</span><span style="color:#c00000; ">1</span><span style="color:#806030; ">)</span>
-ptf<span style="color:#806030; ">.</span>Prototype<span style="color:#806030; ">(</span><span style="color:#800000; ">"</span><span style="color:#e60000; ">sample-project-1</span><span style="color:#800000; ">"</span><span style="color:#806030; ">,</span> <span style="color:#800000; ">"</span><span style="color:#e60000; ">sample-experiment-1</span><span style="color:#800000; ">"</span><span style="color:#806030; ">)</span>
-ptf<span style="color:#806030; ">.</span>Default<span style="color:#806030; ">(</span>dataset_path<span style="color:#806030; ">=</span><span style="color:#800000; ">"</span><span style="color:#e60000; ">./dataset_cats_dogs_train/</span><span style="color:#800000; ">"</span><span style="color:#806030; ">,</span> 
-    			model_name<span style="color:#806030; ">=</span><span style="color:#800000; ">"</span><span style="color:#e60000; ">resnet18</span><span style="color:#800000; ">"</span><span style="color:#806030; ">,</span> freeze_base_network<span style="color:#806030; ">=</span>True<span style="color:#806030; ">,</span> num_epochs<span style="color:#806030; ">=</span><span style="color:#c00000; ">2</span><span style="color:#806030; ">)</span>
-ptf<span style="color:#806030; ">.</span>Train<span style="color:#806030; ">(</span><span style="color:#806030; ">)</span>
-</pre>
+```python
+ptf = prototype(verbose=1)
+ptf.Prototype("sample-project-1", "sample-experiment-1")
+ptf.Default(dataset_path="./dataset_cats_dogs_train/", 
+                model_name="resnet18", freeze_base_network=True, num_epochs=2)
+ptf.Train()
+```
 
 ## Inference
 
+```python
+img_name = "./monk/datasets/test/0.jpg";
+predictions = ptf.Infer(img_name=img_name, return_raw=True);
+print(predictions)
+```
 
 
 ## Compare Experiments
@@ -26,26 +31,12 @@ ptf<span style="color:#806030; ">.</span>Train<span style="color:#806030; ">(</s
 - Add created experiments with different hyperparameters
 - Generate comparison plots
 
-<pre style="color:#000000;background:#f1f0f0;">ctf <span style="color:#806030; ">=</span> compare<span style="color:#806030; ">(</span>verbose<span style="color:#806030; ">=</span><span style="color:#c00000; ">1</span><span style="color:#806030; ">)</span><span style="color:#806030; ">;</span>
-ctf<span style="color:#806030; ">.</span>Comparison<span style="color:#806030; ">(</span><span style="color:#800000; ">"</span><span style="color:#e60000; ">Sample-Comparison-1</span><span style="color:#800000; ">"</span><span style="color:#806030; ">)</span><span style="color:#806030; ">;</span>
-ctf<span style="color:#806030; ">.</span>Add_Experiment<span style="color:#806030; ">(</span><span style="color:#800000; ">"</span><span style="color:#e60000; ">sample-project-1</span><span style="color:#800000; ">"</span><span style="color:#806030; ">,</span> <span style="color:#800000; ">"</span><span style="color:#e60000; ">sample-experiment-1</span><span style="color:#800000; ">"</span><span style="color:#806030; ">)</span><span style="color:#806030; ">;</span>
-ctf<span style="color:#806030; ">.</span>Add_Experiment<span style="color:#806030; ">(</span><span style="color:#800000; ">"</span><span style="color:#e60000; ">sample-project-1</span><span style="color:#800000; ">"</span><span style="color:#806030; ">,</span> <span style="color:#800000; ">"</span><span style="color:#e60000; ">sample-experiment-2</span><span style="color:#800000; ">"</span><span style="color:#806030; ">)</span><span style="color:#806030; ">;</span>
-    <span style="color:#806030; ">.</span>
-    <span style="color:#806030; ">.</span> 
-    <span style="color:#806030; ">.</span>
-</pre>
-
-
-
-
-## Features 
-- Image Classification
-    - Foldered Datasets
-    - CSV Datasets
-
-
-### TODO :
-- Add compare experiment graph
-- Add code snippets of easy resume, copy, update
-
-
+```python
+ctf = compare(verbose=1);
+ctf.Comparison("Sample-Comparison-1");
+ctf.Add_Experiment("sample-project-1", "sample-experiment-1");
+ctf.Add_Experiment("sample-project-1", "sample-experiment-2");
+    .
+    . 
+    .
+```
