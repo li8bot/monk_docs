@@ -22,12 +22,25 @@ foo@bar:~$ pip install -r requirements-cpu.txt
 #### For CUDA == 9.0
 ```bash
 foo@bar:~$ cd monk_v1/
-foo@bar:~$ pip install -r requirements-gpu9.txt
+foo@bar:~$ pip install -r requirements-cu9.txt
 ```
 #### For CUDA == 10.0 (Colab/Kaggle)
 ```bash
 foo@bar:~$ cd monk_v1/
-foo@bar:~$ pip install -r requirements-gpu10.txt
+foo@bar:~$ pip install -r requirements-cu10.txt
+```
+
+#### 2.c) For Tensorflow == 2.0
+#### For CUDA == 9.0
+```bash
+foo@bar:~$ cd monk_v1/
+foo@bar:~$ pip install -r tensorflow2-cpu.txt
+```
+
+#### For CUDA == 10.0
+```bash
+foo@bar:~$ cd monk_v1/
+foo@bar:~$ pip install -r tensorflow2_gpu.txt
 ```
 
 ## 3)Install Monk globally
