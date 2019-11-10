@@ -15,31 +15,31 @@ foo@bar:~$ workon monk
 
 ### 2.a) Install dependencies for CPU-only
 ```bash
-foo@bar:~$ cd monk_v1/
+foo@bar:~$ cd monk_v1/installation
 foo@bar:~$ pip install -r requirements-cpu.txt
 ```
 ### 2.b) Install dependencies for systems with GPU
 #### For CUDA == 9.0
 ```bash
-foo@bar:~$ cd monk_v1/
+foo@bar:~$ cd monk_v1/installation
 foo@bar:~$ pip install -r requirements-cu9.txt
 ```
 #### For CUDA == 10.0 (Colab/Kaggle)
 ```bash
-foo@bar:~$ cd monk_v1/
+foo@bar:~$ cd monk_v1/installation
 foo@bar:~$ pip install -r requirements-cu10.txt
 ```
 
 #### 2.c) For Tensorflow == 2.0
 #### For CUDA == 9.0
 ```bash
-foo@bar:~$ cd monk_v1/
+foo@bar:~$ cd monk_v1/installation
 foo@bar:~$ pip install -r tensorflow2-cpu.txt
 ```
 
 #### For CUDA == 10.0
 ```bash
-foo@bar:~$ cd monk_v1/
+foo@bar:~$ cd monk_v1/installation
 foo@bar:~$ pip install -r tensorflow2_gpu.txt
 ```
 
