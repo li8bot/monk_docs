@@ -13,12 +13,19 @@ foo@bar:~$ workon monk
 
 ## 2) Setup Dependencies
 
-### 2.a) Install dependencies for CPU-only
+### 2.a) Install dependencies for Linux CPU-only
 ```bash
 foo@bar:~$ cd monk_v1/installation
 foo@bar:~$ pip install -r requirements-cpu.txt
 ```
-### 2.b) Install dependencies for systems with GPU
+
+### 2.b) Install dependencies for MacOS CPU-only
+```bash
+foo@bar:~$ cd monk_v1/installation
+foo@bar:~$ pip install -r requirements-cpu_macos.txt
+```
+
+### 2.c) Install dependencies for systems with GPU
 #### For CUDA == 9.0
 ```bash
 foo@bar:~$ cd monk_v1/installation
@@ -30,7 +37,7 @@ foo@bar:~$ cd monk_v1/installation
 foo@bar:~$ pip install -r requirements-cu10.txt
 ```
 
-#### 2.c) For Tensorflow == 2.0
+#### 2.d) For Tensorflow == 2.0
 #### For CUDA == 9.0
 ```bash
 foo@bar:~$ cd monk_v1/installation

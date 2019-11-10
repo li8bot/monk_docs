@@ -6,5 +6,5 @@
 
 - Fuelled by Deep Learning algorithms
 
-[GitHub](https://github.com/abhi-kumar/monk_v1)
+[GitHub](https://github.com/Tessellate-Imaging/monk_v1)
 [Get Started](introduction.md)
