@@ -2,7 +2,7 @@
 
 ## 0) Clone library from github
 ```console
-foo@bar:~$ git clone https://github.com/abhi-kumar/monk_v1
+foo@bar:~$ git clone https://github.com/Tessellate-Imaging/monk_v1
 ```
 ## 1) Setup virtual environment
 
