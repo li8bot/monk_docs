@@ -3,6 +3,7 @@
 * [Setup](setup/setup.md)
 * [Quick_Mode](quick_mode/quickmode_pytorch.md)
 * [Dataset_Formats](dataset_format/image_classification.md)
+* [Hyper-Parameter_Finder](hp_finder/model_finder.md)
 * [Update_Mode](update_mode/update_dataset.md)
 * [Auxillary_Functions](aux_functions.md)
 * [Resume_Training](resume_training.md)

@@ -1,0 +1,6 @@
+* [Back](introduction.md)
+* [Model_Finder](hp_finder/model_finder.md)
+* [Batch_Size_Finder](hp_finder/batch_size_finder.md)
+* [Input_Dimension_Finder](hp_finder/input_dimension_finder.md)
+* [LR_Finder](hp_finder/LR_finder.md)
+* [Optimiser_Finder](hp_finder/optimiser_finder.md)
